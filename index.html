@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>계명종합중기 홈페이지</title>
+    <title>계명종합중기 전화걸기</title>
+    
+    <script>
+        // 전화 연결 (모바일 사용자를 위한 기능)
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            window.location.href = "tel:01038480591";
+
+            // 일정 시간 후 URL로 이동
+            setTimeout(function() {
+                window.location.href = "https://linktr.ee/KM_Heavy"; 
+            }, 3000); // 시간 조정
+        }
+    </script>
+    
     <style>
         /* 기본 설정 */
         html, body {

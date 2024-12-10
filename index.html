@@ -1,44 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계명종합중기 홈페이지</title>
+    <style>
+        /* 기본 설정 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
 
-        <title>계명종합중기 전화걸기</title>
-        
-        <script>
-            // 전화 연결
-            window.location.href = "tel:01038480591";
+        /* 헤더 스타일 */
+        header {
+            background-color: #191919;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
 
-            // 일정 시간  후
-            setTimeout(function() {
-                window.location.href = "https://linktr.ee/KM_Heavy";}, 3000); // 시간 조정
-        </script>
-        
-        <style>
-            body {
-                text-align: center;
-                font-family: Arial, sans-serif;
-                background-color: #f8f9fa;
-                margin: 0;
-                padding: 20px;
-            }
-            
-            img {
-                max-width: 100%;
-                height: auto;
-                margin-top: 20px;
-            }
-            
-            p {
-                font-size: 18px;
-                color: #333;
-            }
-        </style>
-    </head>
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
 
-    <body>
-        <p>전화로 연결 중입니다...</p>
-        <img src="km1.jpg" alt="계명종합중기 로고">
-    </body>
+        /* 연락처 스타일 */
+        .contact {
+            margin-top: 10px; /* 상단 간격 축소 */
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .contact h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        .contact p {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin: 0;
+        }
+
+        /* 설명 텍스트 스타일 */
+        .description {
+            margin: 10px auto; /* 텍스트와 이미지 간격 축소 */
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #666;
+            max-width: 900px;
+        }
+
+        /* 로고 및 이미지 스타일 */
+        .logo {
+            margin: 10px auto; /* 로고 상단 여백 축소 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            max-width: 1100px;
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px; /* 상단 여백 축소 */
+            padding: 20px 0;
+            background-color: #EAEAEA;
+            color: #888;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 반응형 디자인 */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .contact h3 {
+                font-size: 1.3rem;
+            }
+
+            .contact p {
+                font-size: 1.5rem;
+            }
+
+            .description {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>계명종합중기</h1>
+    </header>
+
+    <div class="contact">
+        <br>
+        <h3>데스크톱 사용자는 아래 전화번호를 이용하세요</h3>
+        <p>📞 010-3848-0591</p>
+    </div>
+
+    <p class="description">
+        <br> <br>
+        아래 이미지를 클릭하시면 <strong>홈페이지</strong>로 이동하여<br>
+        계명종합중기의 자세한 정보를 확인할 수 있습니다.
+        <br>
+    </p>
+
+    <div class="logo">
+        <a href="https://linktr.ee/KM_Heavy" target="_blank">
+            <img src="km1.jpg" alt="계명종합중기 로고">
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2024 계명종합중기. All rights reserved.</p>
+    </footer>
+</body>
 </html>
